@@ -1,0 +1,45 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.about-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.about-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.about-item p {
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
